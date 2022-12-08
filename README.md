@@ -1,4 +1,4 @@
-# big-O-notation
+# BigO Notation
 
 ## BigO Notation is a method for determining an algorithms efficiency
 
