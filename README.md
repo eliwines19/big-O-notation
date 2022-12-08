@@ -51,4 +51,16 @@
 ## linear Time: O(n)
 ### When the running time of an algorithm increases linearly as the length of the input increases
 ### When a function runs for or iterates over an input size of 'n'
+### Our function will log to our console 10 times if the input size is 10, or 100 times if the input size is 100
 ##### see lines 7 of index.js
+
+
+## Logarithm Time: O(log n)
+### When the size of an inpput decreases with every step of the algorithm
+### Example:
+#### think of a dictionarity. If we were to look for a word that starts with the letter r, Linear time would be to start from the beginning and go through each word until we find our word. In Logarithm Time, we would find the halfway point of the dictionary, then determine if our word comes before or after our halfway point. If it comes before our halfway point we scratch the second half, find the midway point of the first half, then repeat the process.
+
+### a great example of this in an algorithm is the Binary Search
+#### see line 15 of index.js
+
+
