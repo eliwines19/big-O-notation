@@ -40,7 +40,7 @@
 ### Factorial time: O(n!)
 
 
-## Different types of complexities with examples:
+# Different types of complexities with examples:
 
 ## Constant Time: O(1)
 ### When there is no dependence on the input size 'n', the formula is O(1)
@@ -61,6 +61,19 @@
 #### think of a dictionarity. If we were to look for a word that starts with the letter r, Linear time would be to start from the beginning and go through each word until we find our word. In Logarithm Time, we would find the halfway point of the dictionary, then determine if our word comes before or after our halfway point. If it comes before our halfway point we scratch the second half, find the midway point of the first half, then repeat the process.
 
 ### a great example of this in an algorithm is the Binary Search
-#### see line 15 of index.js
+##### see line 15 of index.js
 
 
+## Quadratic Time: O(n^2)
+### Directly related to the squared size of the input data collection
+### You will encounter such time complexity when making several iterations over your input
+### In our example, we have two nested loops. If the array has 'n' items, the outer loop will iterate 'n' times, and the inner loop will iterate 'n' times for each iteration of the outer loop.
+### If the size of the input is 10, then the loop runs 10x10 times
+##### see line 36 of index.js
+
+
+## Exponential Time: O(2^n)
+### With each addition to the input (n), the growth rate doubles, and the algorithm iterates across all subsets of the input elements
+### When an input is increased by 1, the number of operations executed is doubled.
+### In our function, we use recursion to calculate the fibonacci sequence.
+##### see line 46 of index.js

@@ -6,8 +6,8 @@ const constantTime = (array) => {
 
 // Linear Time: O(n)
 const linearTime = (array) => {
-    for (var i = 0; i < array.length, i++;) {
-        console.assert.log(`Element ${i} is ${array[i]}`);
+    for (var i = 0; i < array.length; i++) {
+        console.log(`Element ${i} is ${array[i]}`);
     };
 };
 
@@ -34,3 +34,20 @@ const binarySearch = (array, x) => {
 
 
 // Quadratic Time: O(n^2)
+const quadratic = (array) => {
+    for (var i = 0; i < array.length; i++) {
+        for (var j = 0; j < array[i].length; j++) {
+            console.log(`Iteration: ${i}`, `Element of array at ${j} is ${array[i][j]}`);
+        };
+    };
+};
+
+
+// Exponential Time: O(2^n)
+const fibonacci = (n) => {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return fibonacci(n - 2) + fibonacci(n - 1);
+    };
+};
