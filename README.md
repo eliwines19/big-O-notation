@@ -8,6 +8,7 @@
 
 ### this is also known as computational complexity or temporal complexity
 
+
 ## space complexity - amount of memory your code uses
 
 ## Big O is 'upper-bound', meaning it measures the worst case scenario, this is because the best case scenario doesnt tell us anything
@@ -18,12 +19,14 @@
 
 ### our world of technology grows every day. It is filled wiht complex applications. When building applications, it is important to test its performance when your application is strained with loads of data so we can perform better than our competitors
 
+
 ## Variables that can contribute to your algorithms performance:
 
 ### underlying hardware
 ### Operating System
 ### CPU
 ### Processor
+
 
 ## It's important to note when calculating BigO Notation, we oftentimes don't consider these factors
 
@@ -36,3 +39,16 @@
 ### Exponential time: 2 ^(n)
 ### Factorial time: O(n!)
 
+
+## Different types of complexities with examples:
+
+## Constant Time: O(1)
+### When there is no dependence on the input size 'n', the formula is O(1)
+### Our function does not depend on the size of the array given, no matter if the array has a length of 100 or 1,000
+##### see line 1 of index.js
+
+
+## linear Time: O(n)
+### When the running time of an algorithm increases linearly as the length of the input increases
+### When a function runs for or iterates over an input size of 'n'
+##### see lines 7 of index.js
