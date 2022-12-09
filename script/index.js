@@ -51,3 +51,17 @@ const fibonacci = (n) => {
         return fibonacci(n - 2) + fibonacci(n - 1);
     };
 };
+
+
+// Factorial Time: O(n!)
+const factorial = (n) => {
+    let num = n;
+
+    if (n === 0) return 1;
+
+    for (var i = 0; i < n; i++) {
+        num = n * factorial(n - 1)
+    }
+
+    return num
+}

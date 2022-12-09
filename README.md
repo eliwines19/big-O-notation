@@ -77,3 +77,14 @@
 ### When an input is increased by 1, the number of operations executed is doubled.
 ### In our function, we use recursion to calculate the fibonacci sequence.
 ##### see line 46 of index.js
+
+
+## Factorial Time: O(n!)
+## Note: AVOID THIS TYPE OF ALGORITHM
+### A factorial is the product of every number up to that number
+#### For exampke: 6! = 1 x 2 x 3 x 4 x 5 x 6 = 720
+### Things can quickly get out of hand with this algorithm
+### Real life example: The traveling salesman
+#### Given a number of cities, and the distance between each city, the goal would be to find the shortest possible route that vists each city once and then returns to the origin. Let's say we have 3 cities, that means we would have to calculate the distance between each combination of the cities, which would be 3! (1 x 2 x 3 = 6).
+### In our function, every number in our factorial will run its own function until it reaches 0, with each recursive function adding its response to our original number. In other words, if we pass in 3, it is then multiplied by 2, then by 1, until it hits 0, giving us the answer of 6 aka 3!
+##### see lines 56 of index.js
